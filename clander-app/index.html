@@ -9,24 +9,41 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body onload="renderClander('')">
     <!-- <h1>my clander app</h1> -->
     <div class="main-container">
         <div class="clander-container">
             <h1>Clander App</h1>
+
             <div class="row">
-                <select name="month" id="month">
+                <select name="months" id="months">
                     <option value="#">Select month</option>
-                    <option value="01">jan</option>
+                    
                 </select>
-                <select name="year" id="year">
+                <select name="years" id="years">
                     <option value="#">Select year</option>
                     <option value="2000">2000</option>
                 </select>
             </div>
             <div class="row">
-                <input type="text" placeholder="Enter Any Date">
-                <button>Enter</button>
+               <div class="days">
+                <div>SUN</div>
+                <div>MON</div>
+                <div>TUE</div>
+                <div>WED</div>
+                <div>THU</div>
+                <div>FRI</div>
+                <div>SAT</div>         
+               </div>
+            </div>
+            <div class="row">
+                <div class="date">
+                  
+                </div>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Enter Any Date" id="dateInput">
+                <button id="enterBtn">Enter</button>
             </div>
         </div>
     </div>
