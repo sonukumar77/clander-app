@@ -32,7 +32,9 @@ h1{
 .clander-container{
     border: 2px solid rgb(0, 255, 13);
     width: 50%;
-    height: 60%;
+    min-width: 360px;
+    min-height: 500px;
+    height: 70%;
     padding: 1rem;
 }
 .row{
@@ -75,4 +77,47 @@ button{
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
+}
+.days,.date{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    
+
+}
+.days{
+    margin-top: 0.5rem;
+    
+}
+.days div{
+    font-weight: bold;
+}
+
+.days div,.date div{
+    border: 2px solid var(--black);
+    width: 14.28%;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.date{
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+.date div:hover{
+    background-color: gray;
+    color: var(--black);
+}
+.current_date{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.prev_dates{
+    /* background-color: gray; */
+    color: gray
+}
+.next_dates{
+
 }
