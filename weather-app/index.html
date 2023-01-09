@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="navbar">
+            <h3>Sonu's Weather App </h3>
+        </div>
+        <div class="appBodyContainer">
+            <div class="asideContainer">
+                <ul id="cityList">
+                    <li><button id="getWeatherBtn">Get Weather</button></li>
+                    <li>City</li>
+                    <li class="city">London</li>
+                    <li class="city">New York</li>
+                    <li class="city">Los Angeles</li>
+                    <li class="city">Las Vegas</li>
+                </ul>
+            </div>
+            <div class="mainBodyContainer">
+                <div class="searchContainer">
+                    <form>
+                        <input type="text" name="search" id="searchBox" placeholder="City name" autocomplete="off" />
+                        <button type="submit" id="searchBtn">Search</button>
+                    </form>
+                </div>
+                <div class="tableContainer">
+                    <table border="2" id="table">
+                        <tr>
+                            <th>City</th>
+                            <th>Description</th>
+                            <th>Temperature (C)</th>
+                            <th>Pressure (hPa)</th>
+                            <th>Data age (hrs)</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
